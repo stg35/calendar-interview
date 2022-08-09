@@ -1,0 +1,41 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    overflow: scroll;
+    height: 300px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 12px;
+}
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #DCDCDC;
+    border-left: none;
+    border-bottom: none;
+    background-color: white;
+    height: 21.5px;
+}
+
+.button:hover {
+    background-color: rgb(228, 221, 246);
+}
+
+.time {
+    display: inline-flex;
+    color: #c4c2c2;
+    font-weight: 300;
+    font-size: smaller;
+}
+
+.timeBlock {
+    display: block;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-self: baseline;
+}

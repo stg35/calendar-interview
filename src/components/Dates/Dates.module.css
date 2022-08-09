@@ -1,0 +1,60 @@
+.menu{
+    display: grid;
+    grid-template-columns: [start] 1fr auto 1fr auto 1fr [end];
+    justify-items: center;
+    background-color: #F5F5F5;
+    padding: 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.dates {
+    grid-column: 1 / 6;
+}
+
+.day {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+.arrowButton1, .arrowButton2 {
+    cursor: pointer;
+    border: none;
+    background-color: #F5F5F5;
+    color: red;
+    font-size: 18px;
+}
+
+.arrowButton1 {
+    grid-column: 2 / 3;
+    
+}
+
+.arrowButton2 {
+    grid-column: 4 / 5;
+}
+
+.monthYearDate {
+    grid-column: 3 / 4;
+}
+
+.dayButton {
+    width: 29px;
+    cursor: pointer;
+    border: none;
+    background-color: #F5F5F5;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.dayButton:hover, .active{
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+}
+
+.dayLetter {
+    font-size: 10px;
+}

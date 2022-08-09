@@ -1,0 +1,15 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 0px 20px;
+    line-height: 50px;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.addButton {
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-size: 24px;
+    color: red;
+}

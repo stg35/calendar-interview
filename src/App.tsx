@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import styled from 'styled-components';
+import { CalendarGrid, Dates, Footer, Header } from './components';
 
-function App() {
+const Calendar = styled.div`
+  max-width: 740px;
+`;
+
+function App(): JSX.Element {
+  const [date, setDate] = useState<Date>(new Date('08.08.2022'));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Calendar>
+      <Header />
+      <Dates date={date} setDate={setDate}></Dates>
+      <CalendarGrid />
+    </Calendar>
   );
 }
 

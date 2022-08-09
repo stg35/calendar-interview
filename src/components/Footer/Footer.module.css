@@ -1,0 +1,19 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 0px 20px;
+    line-height: 50px;
+    background-color: #F5F5F5;
+    color: red;
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.delete {
+    display: none;
+}
+
+.visible {
+    display: block;
+    cursor: pointer;
+}
