@@ -21,7 +21,7 @@ export const Dates = ({ date, setDate }: DatesProps): JSX.Element => {
                     <div className={styles.dayLetter}>{days[i]}</div>
                     <button className={cn(styles.dayButton, {
                         [styles.active]: dt.toDateString() == new Date().toDateString()
-                    })}>{dt.getDate()} </button>
+                    })}>{dt.getDate().toString()} </button>
                 </>
             );
         });
@@ -43,7 +43,7 @@ export const Dates = ({ date, setDate }: DatesProps): JSX.Element => {
         <div className={styles.menu}>
             <div className={styles.dates}>{dateArray.map((d: JSX.Element, i:number) => <div className={styles.day}>{d}</div>)}</div>
             <button className={styles.arrowButton1} onClick={earlierWeek}>{'<'}</button>
-            <div className={styles.monthYearDate}>{date.toDateString().split(' ')[1]} {date.toDateString().split(' ')[3]}</div>
+            <div className={styles.monthYearDate}>{date.toDateString().split(' ')[1].toString()} {date.toDateString().split(' ')[3].toString()}</div>
             <button className={styles.arrowButton2} onClick={nextWeek}>{'>'}</button>
         </div>
         </div>
